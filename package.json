@@ -12,6 +12,7 @@
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.3",
     "concurrently": "^9.1.2",
+    "dotenv": "^17.3.1",
     "execp": "^0.0.1",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
