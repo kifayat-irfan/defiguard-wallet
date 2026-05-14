@@ -1,78 +1,108 @@
-# Getting Started with Create React App
+# 🔐 DeFiGuard Wallet — Technical Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic Web3 wallet interface built with Web3.js that allows users to connect their MetaMask wallet, view their ETH balance, and send ETH on the Sepolia testnet.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✅ Features
 
-### `npm start`
+- 🦊 MetaMask wallet connection
+- 💰 Live ETH balance & wallet address display
+- 📤 Send ETH to any address
+- 🌐 Sepolia Testnet support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Technology | Purpose |
+|------------|---------|
+| Web3.js | Blockchain interaction |
+| MetaMask | Wallet provider |
+| Node.js v18+ | Runtime environment |
+| HTML/CSS/JS | Frontend interface |
+| Sepolia Testnet | Test network |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📋 Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before running this project, make sure you have:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js v18+](https://nodejs.org/) installed
+- [Git](https://git-scm.com/) installed
+- [MetaMask](https://metamask.io/) browser extension installed
+- Sepolia testnet configured in MetaMask
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Setup & Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Step 1 — Clone the Repository
+```bash
+git clone https://github.com/kifayat-irfan/defiguard-wallet.git
+cd defiguard-dev
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Step 2 — Install Dependencies
+```bash
+npm install
+npm install web3
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 3 — Start Local Server
+```bash
+npx live-server public
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> The app will automatically open at `http://127.0.0.1:8080`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 How to Test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Open browser at `http://127.0.0.1:8080`
+2. Open MetaMask → Switch network to **Sepolia Testnet**
+   - Settings → Advanced → Enable **Show Test Networks**
+3. Click **"Connect MetaMask"** button
+4. Approve connection in MetaMask popup
+5. Your wallet **address** and **ETH balance** will appear
+6. To send ETH:
+   - Enter recipient address (`0x...`)
+   - Enter amount in ETH (e.g. `0.001`)
+   - Click **"Send ETH"**
+   - Confirm transaction in MetaMask
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+defiguard-dev/
+├── public/
+│   ├── index.html      # Main wallet UI
+│   ├── app.js          # Web3.js logic
+│   └── favicon.ico
+├── server/
+│   ├── index.js        # Node.js backend
+│   ├── routes/
+│   ├── controllers/
+│   └── models/
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👨‍💻 Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Kifayat Irfan**  
+GitHub: [@kifayat-irfan](https://github.com/kifayat-irfan)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 Notes
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### The task (roughly 30 minutes):
-➡ Create a basic ETH wallet UI with Web3.js.\
-➡ Enable sending and receiving ETH functionalities. 
-
-**Note: The purpose of this exercise is to understand how you approach problem solving your method, focus, and time management rather than achieving a perfect result. Just aim to do as much as possible in 30 minutes.**
-
-
+- This project was built as part of the DeFiGuard technical assessment for Blaize.tech
+- Real ETH is **not** required — Sepolia testnet tokens are used for testing
+- Task completed within the 30-minute timeframe
